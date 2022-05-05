@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  width: 100%;
+  height: 100vh;
+  padding: 5px;
+  /*display: flex;*/
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(62deg, rgba(1, 95, 183, 0.9732216701) 13%, rgba(255, 122, 151, 0.5) 4%), linear-gradient(44deg, rgba(0, 43, 99, 0.0792209024) 39%, rgba(242, 140, 143, 0.5) 18%), linear-gradient(118deg, rgba(84, 202, 242, 0.0315299727) 40%, rgba(247, 155, 187, 0.5) 54%), linear-gradient(58deg, rgba(90, 90, 237, 0.1614444357) 83%, rgba(249, 156, 142, 0.5) 23%);
+  background-blend-mode: normal, lighten, multiply, hard-light;
+  font-family: "DM Sans", sans-serif;
+  overflow: hidden;
+  background-attachment: fixed; /* TODO MOBILDE TEKRARI ÖNLÜYOR */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.card{
+  box-shadow: rgb(38, 57, 77) 0px 20px 20px -10px;
+}
+
+.card-body{
+  max-height: 70vh;
+  overflow: auto;
+}
+
+ul{
+  list-style: none;
+  padding: 0 !important;
+}
+
+.task-list-item {
+  background-color: #191933;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  display: flex;
+  padding: 16px;
+  cursor: pointer;
+}
+input[type="checkbox"]{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-check' stroke='%23fff'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0;
+  transition: 0.2s;
+  flex-shrink: 0;
+  appearance: none;
+  background-color: #ee9ca7;
+}
+
+.checkbox:checked{
+  background-size: 15px;
+  background-color: #ee9ca7;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-check' stroke='%23fff'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+}
+
+
+.todo {
+  display: grid;
+  gap: 3px;
+  grid-auto-rows: minmax(10px, auto);
+  grid-template-columns: 7% 80% 13%;
+  align-items: center;
+}
+
+
+
+.task-name{
+  font-size: 13px;
+}
+.complated{
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: line-through rgba(255, 255, 255, 0.8);
+}
+
+.buttons{
+  display: flex;
+  font-size: 16px;
+}
+.edit-btn{
+  margin-right: 5px;
+}
+
+.check-btn{
+  margin-left: 10px;
+}
