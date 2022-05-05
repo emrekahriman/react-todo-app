@@ -1,6 +1,6 @@
 # React To Do App
 
-### See Live: https://emrekhrmn.github.io/react-spend-money-app/
+### See Live: https://emrekhrmn.github.io/react-todo-app/
 
 ![react-todo-app-ss](https://user-images.githubusercontent.com/59236526/166967848-2389fdb6-ac3b-415a-bdad-e673eaa99548.png)
 
